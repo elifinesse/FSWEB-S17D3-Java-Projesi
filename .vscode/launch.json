@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ZooApplication<zoo>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.workintech.zoo.ZooApplication",
+      "projectName": "zoo",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
