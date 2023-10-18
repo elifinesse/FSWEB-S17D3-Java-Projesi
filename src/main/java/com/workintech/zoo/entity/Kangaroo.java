@@ -1,19 +1,22 @@
 package com.workintech.zoo.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Kangaroo {
 
-    private int id;
-    private String name;
-    private int height;
-    private int weight;
-    private String gender;
+@Getter
+@Setter
+public class Kangaroo extends Animal{
+
+    private String height;
     private boolean isAggressive;
+
+    public Kangaroo(int id, String name, int weight, String gender, String height, boolean isAggressive) {
+        super(id, name, weight, gender);
+        this.height = height;
+        this.isAggressive = isAggressive;
+    }
+    
 
 }
